@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Model na prática</title>
+    <style>
+        h1 {
+            background-color: lightslategray;
+            height: 300px;
+            width: 300px;
+            border: 10px solid darkgoldenrod; /*width style color*/
+            padding: 10px; /*top right bottom left são iguais em medida de comprimento, logo você pode declarar apenas uma medida de comprimento; caso você declarasseduas medidas ele consideraria que a primeira é: top e bottom; segunda: right e left*/ 
+            margin: 20px auto 40px auto; /*o right e o left com auto, já automaticamente centraliza a caixa*/
+            outline: 5px dashed salmon;
+        }
+
+        a {
+            
+            /*
+            Ele continua sendo inline-level, mas ele vai ter algumas características de block-level isso possibilita que você possa colocar altura e largura, mesmo que inline-level não tenha isso.
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            */
+            border: 10px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa Block-level</h1>
+    <p>Parágrafos também são exemplos de caixa Box-level, mas os <a href="#">links são exemplos de caixa Inline-level</a>. Como isso funciona</p>
+</body>
+</html>

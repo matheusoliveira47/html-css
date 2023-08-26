@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* 
+    em HTML é id = em CSS é #
+    em HTML é class = em CSS é .
+*/
+
+body {
+    background-color: rgb(205, 255,203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(4, 109, 0);
+}
+
+h1#principal{ /*Não é necessário colocar o h1 antes do ID, porém é interessante pra ficar melhor identificado visualmente.*/
+    text-align: center; /*Observe que ele ainda está herdando a cor do h1 normal*/
+    background-color: rgb(4, 109, 0);
+    color: white;
+}
+
+h2 {
+    color: rgb(51, 77, 49);
+}

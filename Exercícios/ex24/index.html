@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de agrupamento</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: rgb(135, 133, 133);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: darkslateblue;
+            padding: 3px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: chartreuse;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            font-size: 2em;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(93, 92, 92);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px; /*Isso teve que ser feito, pq o parágrafo irria atrapalhar o padding do fundo, pq o paragrafo ia ter uma margem automática de 16px, dada pelo navegador*/
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--Menu-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--Conteúdo principal-->
+        <section id="assuntos">
+            <h2>Esportes, políticas e tecnologias</h2>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos architecto, in quod officia doloribus odio consectetur, nostrum repellat, eaque hic quae laboriosam dignissimos magni? Expedita inventore temporibus alias doloribus enim!</p>
+                <aside>
+                    <p>artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer> <!--Rodapé-->
+        <p>Desenvolvido pelo Curso em Vídeo</p>
+    </footer>
+</body>
+</html>

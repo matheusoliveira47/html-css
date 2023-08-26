@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'caveat';
+    src: url('fonts/caveat.ttf') format('truetype');
+}
+
+body {
+    font: normal 2em 'caveat', sans-serif;
+    background-color: #9073A9;
+}
+
+h1 {
+    font-size: 3em;
+    color: #FC641F;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #FBC500;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}

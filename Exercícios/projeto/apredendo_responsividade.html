@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: auto;
+            min-width: 280px; /*Largura mínimo*/
+            max-width: 800px; /*O largura máximo que ele vai ocupar mesmo em uma tela gigante é 800px*/
+        }
+
+        img {
+            width: 100%; /*Pra ser responsivo e a imagem não quebrar, acho que ela ocupa 100% de largura, por isso não quebra*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eaque temporibus voluptas, accusantium fugit itaque ea quos, aspernatur laudantium similique nemo maxime, totam saepe ab fuga recusandae accusamus voluptate incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, necessitatibus? Corrupti fugit laboriosam dolore facilis quis quidem eum nemo, quasi beatae animi tempora magnam qui id illo aliquam accusantium veritatis?m Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nesciunt iste illo quo consequuntur, at a repellendus nisi quaerat facilis voluptatem ex ea ipsa quia et vel molestiae velit. Quam.</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg"> <!--Source:media, dps muda pra max-width; A imagem base vai ser mostrada, porém se a tela chegar até 600px pra baixo ou o celular mesmo ter essas medidas, vai carregar a imagem pequena-->
+            <img src="imagens/irina-blok.jpg" alt="irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eaque temporibus voluptas, accusantium fugit itaque ea quos, aspernatur laudantium similique nemo maxime, totam saepe ab fuga recusandae accusamus voluptate incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, necessitatibus? Corrupti fugit laboriosam dolore facilis quis quidem eum nemo, quasi beatae animi tempora magnam qui id illo aliquam accusantium veritatis?m Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nesciunt iste illo quo consequuntur, at a repellendus nisi quaerat facilis voluptatem ex ea ipsa quia et vel molestiae velit. Quam.</p>
+    </main>
+</body>
+</html>

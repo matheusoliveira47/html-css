@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to right, beige, bisque);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(145, 145, 145, 0.609);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    text-align: center; /*Resolveu o problema, mas será que é o ideal? Vou ter que usar um internal css no justify do parágrafo*/
+}
+
+h1 {
+    color: #5f5639;
+    text-align: center;
+    text-shadow: 1px 1px 2px #4b442e28;
+}
+
+h2 {
+    color: #59564f;
+    text-align: center;
+}
+
+img {
+    width: 590px;
+}
+
+.recuo { text-indent:3em }

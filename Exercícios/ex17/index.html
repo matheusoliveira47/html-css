@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixando fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'fontezinha';
+            src: url('fonts/better-spring_otf.otf') format('opentype'), url('fonts/better-spring_ttf.ttf') format('truetype');
+        }
+        body {
+            font-family: 'fontezinha';
+            background-image: linear-gradient(90deg, rgb(250, 247, 50), rgb(250, 120, 14), rgb(173, 114, 168));
+        }
+
+        h1 {
+            font-family: 'fontezinha';
+            font-size: 3em;
+        }
+
+        h2 {
+            font-family: 'fontezinha';
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título 1</h1>
+    <p style="font-size: 4em;">ALGUNS NAVEGADORES FUNCIONAM MELHOR COM TTF OUTROS COM OTF, POR ISSO USEI UMA FONTE DE QUE POSSUI TTF E OTF</p>
+    <h2 style="font-size: 4em;">TIPOS DE 'FORMAT()' opentype(otf), truetype(ttf), embedded-opentype, truetype-eat(Apple Advanced Typography), svg</h2>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto fugiat voluptatem minus, quo accusantium, omnis magni optio, odio vitae possimus quibusdam alias maxime eum. Reprehenderit at totam repellat similique officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente aut voluptatem quas iure! Aliquid eligendi, accusamus doloremque cumque mollitia ut hic nisi exercitationem ipsam necessitatibus debitis quaerat, voluptatibus quia!</p>
+    <h2>Título 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, sed nam ullam aliquid explicabo et est tempore illum itaque quidem tempora soluta dicta aspernatur consectetur mollitia possimus provident atque dolores.</p>
+</body>
+</html>

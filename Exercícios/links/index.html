@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Usando Links externos</h1>
+    <p>Links externos leva a um site que não é seu.</p>
+    <p>Ex: Você pode acessar meu repósitorio público no <a href="https://github.com/gustavoguanabara">GitHub</a>.</p>
+    <p><code>&lt;a href="https://github.com/gustavoguanabara"&gt;</code> é bom, mas quando a pessoa clicar você sobrepós o site de outra pessoa ao seu, e provalvelmente a pessoa nunca mais vai voltar ao seu.</p>
+    <p><a href="https://github.com/gustavoguanabara" hreflang="pt-br" target="_parent">GitHub</a></p>
+    <p><code>hreflang=""</code> serve para dizer o idioma do site ao qual o link retorna.</p>
+    <p><code>target=""</code>
+        <br>
+        O target serve pra configurar como vai abrir o link no navegador. Existem 4 tipos de "target":<br>
+        <ul>
+            <li><code>_blank</code> vai abrir o link em uma nova janela em branco.
+            <li><code>_self</code> vai abrir o link na janela ou frame atual (padrão).
+            <li><code>_top</code> vai desfazer todos os frames e abrir o destino no navegador completo.
+            <li><code>_parent</code> similar ao uso do _top em uma referência à janela mãe nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir
+        </ul>
+        Geralmente o <code>_blank</code> e <code>_self</code> são os mais usados.
+    </p>
+    <p>O parâmetro <code>rel=""</code> serve para indicar a natureza de um link, existem 4 tipos de <code>rel=""</code>:<br>
+    <ul>
+        <li><code>next</code> indica que o link é para a próxima parte do documento atual.
+        <li><code>prev</code> indica que o link é para a parte anterior do documento atual.
+        <li><code>author</code> indica que é um link para o site do autor do artigo atual.
+        <li><code>external</code> indica que é um link para outro site que não faz parte do site.
+        <li><code>nofollow</code> indica que é um link para outro site que não endossado, como um link pago.
+    </ul></p>
+    <p><a href="https://github.com/gustavoguanabara" hreflang="pt-br" target="_blank" rel="external">GitHub</a></p>
+    <p><a href="archive box/prev.html" hreflang="pt-br" target="_blank" rel="prev">Anterior</a></p>
+    <p><a href="next.html" hreflang="pt-br" target="_blank" rel="next">Próximo</a></p>
+</body>
+</html>
