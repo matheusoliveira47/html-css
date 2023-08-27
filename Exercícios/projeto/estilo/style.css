@@ -7,6 +7,7 @@
     src: url('../fontes/idroid.otf') format('opentype');
     font-weight: normal; /*@font-face é uma regra por isso deu pra colocar esse font-weight de boa*/
 }
+
 /*:root e * configutações globais por isso estão acima e só abaixo das regras.*/
 :root {
     --cor0: #c5ebd6;
