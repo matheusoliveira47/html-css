@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Alinhamento Vertical</title>
+    <style>
+        /*A operação de sempre pra alinhamento vertical, container posicionamento relativo, conteudo posicional absoluto*/
+        section#container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        article#conteudo {
+            position: absolute; /*position: absolute, permite que seja colocado o left e o top*/
+            left: 50%;
+            top: 50%;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%; /*Ele não vai estar na metade, pq vai usar o left e o top como ponto de referência pra saber onde é o centro; Pra deixar ela no centro verdadeiro use: transform: translate();*/
+            margin: auto;
+            transform: translate(-50%, -50%); /*-50 pra ficar exatamente no meio; direita,topo*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
