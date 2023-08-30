@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+:root { /*Root é uma confugração por cima está em cima abaixo da regra*/
+    --cor0: #de85fe;
+    --cor1: #CB38FF;
+    --cor2: #8A17B3;
+    --cor3: #FFC608;
+    --cor4: #17b0b3; 
+    --cor5: #4FFCFF;
+}
+
+* { /*É uma configuração que aplica um estilo único em todas as tags*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), #f3bd0e, #d9ae20);
+    padding: 10px;
+    margin: ;
+}
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    height: 100vh;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--cor2);
+}
