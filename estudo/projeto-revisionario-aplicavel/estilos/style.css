@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'mermaid';
+    src: url('../fontes/mermaid/mermaid.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('../fontes/roboto/roboto-regular.ttf') format('truetype'), url('../fontes/roboto/roboto-bold.ttf') format('truetype'); /*tem a NORMAL e a BOLD*/
+}
+
 :root { /*Root é uma confugração por cima está em cima abaixo da regra*/
     --cor0: #de85fe;
     --cor1: #CB38FF;
@@ -7,6 +18,10 @@
     --cor3: #FFC608;
     --cor4: #17b0b3; 
     --cor5: #4FFCFF;
+    --fonte-padrao: 'roboto', sans-serif;
+    --fonte-titulo: 'mermaid', serif;
+    --fonte-destaque: 'Kanit', sans-serif; /*Links*/
+    /*FONTES TÃO FUNCIONANDO MAS FICARAM RUINS*/
 }
 
 * { /*É uma configuração que aplica um estilo único em todas as tags*/
@@ -16,6 +31,7 @@
 
 body {
     background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
 }
 
 header {
@@ -26,6 +42,7 @@ header {
 
 header h1 {
     text-align: center;
+    font-family: var(--fonte-titulo);
 }
 
 main {
@@ -33,9 +50,23 @@ main {
     min-width: 300px;
     max-width: 1000px;
     height: 100vh;
-    margin: auto;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.100);
+    padding: 20px;
+    margin: auto auto 30px auto;
+    border-radius: 0px 0px 7px 7px;
+}
+
+main > h1 {
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    padding: 5px;
+}
+
+main strong {
+    background-color: var(--cor5);
+    font-family: var(--fonte-destaque); /*N vai ter font-weight*/
 }
 
 footer {
-    background-color: var(--cor2);
+    background-color: var(--cor4);
 }
