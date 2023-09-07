@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tabelas grandes</title>
+    <style>
+        body {
+            background-color: rgb(157, 215, 195);
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+        
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(232, 148, 148);
+        }
+
+        tbody {
+            background-color: white;
+        }
+
+        tbody tr:nth-child(2n) { /*Quer dizer que de 2 em 2 ele coloca a configuração que você quer*/
+            background-color: antiquewhite;
+        }
+        
+        thead, tfoot {
+            background-color: rgb(158, 0, 77);
+            color: white;
+        }
+
+        caption, td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>População das Unidades Federativas</caption> <!--Não aceita tr, td, th, diferente de thead, tbody, tfoot que aceitam-->
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th> <!--Perceba que ele alterou a largura da coluna inteira-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 420 459</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td> 
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 880 506</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" style="width: 800000px;">Total de Habitantes</th>
+                <td class="num"><strong>UM TOTAL AÍ</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
