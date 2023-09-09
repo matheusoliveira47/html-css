@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site 1</title>
+    <link rel="shortcut icon" href="favicon/favicon5.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style-padrao.css">
+    <style>
+        main {
+            height: 100%;
+        }
+
+        mark {
+            background-color: cyan; /*marcação em destaque em HTML e configurado com css, tudo absolutamente semântico*/
+            font-family: var(--fonte-destaque);
+        }
+
+        pre {
+            margin: -10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,11 +29,36 @@
     <nav>
         <a href="base.html" hreflang="pt-br" target="_self" rel="author">Home</a>
         <a href="index1.html" hreflang="pt-br" target="_self" rel="author">1</a>
-        <a href="#" hreflang="pt-br" target="_self" rel="author">2</a>
+        <a href="index2.html" hreflang="pt-br" target="_self" rel="author">2</a>
     </nav>
     <main>
-        <h1>Algumas tags</h1>
-        
+        <h1>Formatações de texto</h1>
+        <h2> Negrito e Itálico semântico</h2>
+            <p>Use a tag &lt;strong&gt; para fazer o Negrito Semântico. Ex: <strong>Negrito</strong>.</p>
+            <p>Use a tag &lt;em&gt; para usar Itálico em forma semântica. Ex: <em>Itálico</em>.</p>
+            <p><strong><em>OBS:</em></strong> Para representar "<>" de forma semântica utilize &lt;conteúdo&gt;.</p>
+            <h2>Outras formatações</h2>
+            <p>Para marcar algo use a tag &lt;mark&gt;. Ex: <mark>Marcação</mark></p>
+            <p>Podemos marcar um texto como excluído para indicar que ele deve ser lido, mas não considerado, para isso utilize a tag &lt;del&gt;. Ex: <del>Já fui cruzerense</del>.</p>
+            <p>Podemos marcar um texto como inserido, utilizando a tag &lt;ins&gt;. Para mostrar que o texto foi inserido depois da primeira postagem de algo. Ex: <ins>FAKE NEWS</ins>.</p>
+            <p>Podemos marcar um texto como sobrescrito utilizando a tag &lt;sup&gt;. Ex: 4<sup>2</sup>.</p>
+            <p>Podemos marcar um texto como subescrito utilizando a tag &lt;sub&gt;. Ex: H<sub>2</sub>O</p>
+            <p>Podemos usar a tag &lt;code&gt; para sinalizar que algo é um código da programação. Ex: <code>&lt;strong&gt;</code>.</p>
+            <p>A tag &lt;pre&gt; serve para colocar códigos do jeitinho que forma escritos. Ex: 
+                <pre>
+                    <code>
+        num = int(input('Digite um npumero'))
+        if num % 2 == 0
+            print(f'O número {num} é PAR')
+                    </code>
+                </pre>
+            </p>
+            <p>Para fazermos uma citação simples de algo utilizamos a tag &lt;q&gt;. Ex: Como diria um pai de um amigo <q>O computador é um burro muito rápido.</q></p>
+            <p>Para fazermos uma citação completa (que é aquele citação que é mais completa mais cheia de texto) de algo utilizamos a tag &lt;blockquote&gt; (Essa tag possui o parâmetro <code>cite</code>). Ex:</p> 
+            <blockquote cite="www.inexistente.com">
+                    Guide e outros. Quando não está ocupado com o trabalho, Ed gosta de viajar, jogar bilhar e passar o tempo com sua família. Ele também adora passar um tempo na cozinha, cozinhando desenfreadamente, ou sendo subchefe de sua esposa, Dina, que é louca por culinária. Jeff Noble busca de alguma maneira equilibrar-se entre as funções de diretor designer de usuário em uma empresa de software global, CA Technologies, editor-sócio da Ultrends.com (um blog sobre oq eu é bom, ruim e feio no design de interface do usuário), e é proprietário da Conquest Media, uma pequena empresa de design de aplicativos na web que fica em Austin, Texas. Jeff possui mais de doze anos de experiência em design e é especialista em todos os aspectos de sites e aplicações de software empresarial (design, construção, otimização, explicação e assim por diante). Além desse título, ele cuidou da edição de seis outros títulos de web design e programação da série For Dummies da Wiley. No pouco tempo em que fica longe do computador, Jeff aprecia atividades infantis, como comer grandes quantidades de doces nada saudáveis e quebrar coisas, assim como hobbies relaxantes, como caminhada, viagem, jardinagem.
+            </blockquote>
+            <p>Utilize a tag &lt;abbr&gt; para fazer abreviações. Ex: <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
     </main>
     <footer>
         <p>Site feito por <a href="https://github.com/matheusoliveira47" hreflang="pt-br" target="_blank" rel="external">Matheus de Oliveira</a></p>

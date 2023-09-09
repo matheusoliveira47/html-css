@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon2.ico" type="image/x-icon">
+    <title>Site 2</title>
+    <link rel="stylesheet" href="estilos/style-padrao.css">
+    <style>
+        ol, ul, dl, dt, dd, li {
+            list-style-position: inside;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        .separador {
+            margin-top: 8px;
+        }
+
+        code {
+            font-size: 1.4em;
+        }
+
+        #normal {
+            text-indent: 0.1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site de Revisão</h1>
+        <p>Um site para revisitar o passado</p>
+    </header>
+    <nav>
+        <a href="base.html" hreflang="pt-br" target="_self" rel="author">Home</a>
+        <a href="index1.html" hreflang="pt-br" target="_self" rel="author">1</a>
+        <a href="index2.html" hreflang="pt-br" target="_self" rel="author">2</a>
+    </nav>
+    <main>
+        <h1>Um pouco sobre listas</h1>
+        <h2>Listas ordenadas - &lt;ol&gt;</h2>
+        <ol type="I">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+        </ol>
+        <ol type="I" start="4">
+            <li>D</li>
+        </ol>
+        <h2>Listas não ordenadas - &lt;ul&gt;</h2>
+        <ul type="circle">
+            <li>Casa</li>
+            <li>Rio</li>
+            <li>SENAI</li>
+            <li>Computador</li>
+        </ul>
+        <p class="separador">O marcador padrão das Listas não ordenadas é a bolinha preta (disc), mas você pode configurar o marcador usando um parâmetro <code>type</code>. Existem 3 tipos de marcadores para listas não ordenadas: <code>disc</code>, <code>circle</code>, <code>square</code>.</p>
+        <h2>Listas de definição - &lt;dl&gt; (&lt;dt&gt; (Definition term) - &lt;dd&gt; (definition description))</h2>
+        <dl>
+            <dt>DETRAN</dt>
+            <dd>Departamento Estadual de Trânsito</dd>
+            <dt>CONTRAN</dt>
+            <dd>Conselho Nacional de Trânsito</dd>
+        </dl>
+        <h2>Misturando as coisas / Exercício</h2>
+        <p id="normal"><a href="extra/extra1.html" hreflang="pt-br" target="_self" rel="author">Acesse aqui</a></p>
+    </main>
+    <footer>
+        <p>Site feito por <a href="https://github.com/matheusoliveira47" hreflang="pt-br" target="_blank" rel="external">Matheus de Oliveira</a></p>
+    </footer>
+</body>
+</html>
