@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo no Iframe por código</title>
+    <style>
+        iframe {
+            width: 95vw;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eaque modi omnis officiis eos, animi ducimus quis, laudantium accusamus sed, aliquam nostrum similique incidunt dolorum alias repellat nihil sit error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laudantium corporis explicabo eveniet magnam debitis accusantium, perspiciatis voluptatibus consequatur? Maxime repellendus adipisci perspiciatis, nihil ducimus hic temporibus natus excepturi sequi?</p>
+
+    <ul>
+        <li><a href="extra-pages/pag1.html" target="iframe">Primeira página</a></li> <!--Colocar o nome do paramêtro name="" dentro do parâmetro target=""-->
+        <li><a href="extra-pages/pag2.html" target="iframe">Segunda página</a></li>
+        <li><a href="extra-pages/pag3.html" target="iframe">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eaque modi omnis officiis eos, animi ducimus quis, laudantium accusamus sed, aliquam nostrum similique incidunt dolorum alias repellat nihil sit error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laudantium corporis explicabo eveniet magnam debitis accusantium, perspiciatis voluptatibus consequatur? Maxime repellendus adipisci perspiciatis, nihil ducimus hic temporibus natus excepturi sequi?</p>
+    <iframe srcdoc="<h1>Escolha uma das opções da lista!!!</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eaque modi omnis officiis eos, animi ducimus quis, laudantium accusamus sed, aliquam nostrum similique incidunt dolorum alias repellat nihil sit error.</p><img src='imagens/baby.jpg' alt='Imagem de um bebê'>" name="iframe">
+        <p>Infelizmente seu navegador com este iframe</p>
+    </iframe>
+</body>
+</html>

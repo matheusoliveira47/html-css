@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como bloquear ações potencialmente maliciosas de um iframe</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed neque id nihil? Recusandae tempore, illum, voluptas incidunt obcaecati beatae optio ut nihil animi aliquid, atque aspernatur maxime. Odio, dicta deserunt?</p>
+    <iframe src="index.html" frameborder="0" sandbox="sandbox" referrerpolicy="no-referrer"> <!--sandbox e referrerpolicy impede que o formulário rode no iframe, ou seja inutiliza ele-->
+        [Seu navegador não é compatível com esse iframe. Acesse o site <a href="index.html" hreflang="pt-br" target="_blank" rel="author">aqui</a>]
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, eveniet perspiciatis esse eligendi velit illo rem totam voluptas consequatur minus, autem fugit. Quaerat sed animi, laudantium soluta eaque expedita dolore!</p>
+</body>
+</html>
