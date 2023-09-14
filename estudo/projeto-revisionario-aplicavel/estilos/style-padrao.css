@@ -35,7 +35,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(#f3bd0e, #edbc1b, #e3b82b);
+    background-image: linear-gradient(180deg, #f3bd0e, #edbc1b, #e3b82b);
     min-height: 80px;
     padding-top: 15px;
     text-align: center;
@@ -115,6 +115,11 @@ main > p {
     font-family: var(--fonte-padrao);
     text-indent: 3em;
     line-height: 2em;
+}
+
+main strong {
+    background-color: var(--cor5);
+    font-family: var(--fonte-destaque); /*N vai ter font-weight*/
 }
 
 footer {
